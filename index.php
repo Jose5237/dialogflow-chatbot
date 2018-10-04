@@ -20,8 +20,8 @@
 		}
 
 		$response = new \stdClass();
-		$response->speech = "";
-		$response->fulfillmentText = "";
+		$response->speech = $speech;
+		$response->displayText = $speech;
 		$response->source = "webhook";
 		echo json_encode($response);
 
