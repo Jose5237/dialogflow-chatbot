@@ -21,7 +21,7 @@
 
 		$response = new \stdClass();
 		$response->speech = "";
-		$response->fullfillmentText = "";
+		$response->fulfillmentText = "";
 		$response->source = "webhook";
 		echo json_encode($response);
 
