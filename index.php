@@ -19,6 +19,20 @@
 				break;
 		}
 
+		$groseria = $json->queryResult->parameters->groseria;
+
+		switch ($groseria) {
+			case 'Puta':
+				$speech = "Tu eres ", $groseria;
+				break;
+			case 'bye':
+				$speech = "¡Bye!";
+				break;
+			default:
+				$speech = "Sorry, i did not understand u ";
+				break;
+		}
+
 		$response = new \stdClass();
 		#$response->speech = $speech;
 		$response->fulfillmentText = $speech;
