@@ -8,7 +8,7 @@
 		$saludo = $json->queryResult->parameters->saludo;
 
 		switch ($saludo) {
-			case 'hi':
+			case 'Hola':
 				$speech = "Hola amig@";
 				break;
 			case 'bye':
