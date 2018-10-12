@@ -23,7 +23,7 @@
 
 		switch ($groseria) {
 			case 'Puta':
-				$speech = "Tu eres ", $groseria;
+				$speech = "Tu eres $groseria";
 				break;
 			case 'bye':
 				$speech = "¡Bye!";
