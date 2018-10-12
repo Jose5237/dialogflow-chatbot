@@ -5,11 +5,11 @@
 		$requestBody = file_get_contents('php://input');
 		$json = json_decode($requestBody);
 
-		$text = $json->queryResult->parameters->text;
+		$saludo = $json->queryResult->parameters->saludo;
 
-		switch ($text) {
+		switch ($saludo) {
 			case 'hi':
-				$speech = "Hi, nice to meet u";
+				$speech = "Hola amig@";
 				break;
 			case 'bye':
 				$speech = "¡Bye!";
